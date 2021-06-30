@@ -90,7 +90,16 @@ def main():
             'link': url + item.get('href')
         }
         pro_result_list.append(result)
-
+    pro_result_list.append({
+        'province':'国家台',
+        'id':'409',
+        'link':'/radiopage/409'
+    })
+    pro_result_list.append({
+        'province':'网络台',
+        'id':'407',
+        'link':'/radiopage/407'
+    })
         # 电台信息存储在radio_list
     for privince_info in pro_result_list:
         temp_url = url+'/radiopage/' + privince_info.get('id')
